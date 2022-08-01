@@ -1,0 +1,15 @@
+// General styles
+
+@import './typography.scss';
+@import './base.scss';
+@import './pages.scss';
+@import './helper.scss';
+
+// Component Styles
+
+@import './components/Navigation.scss';
+@import './components/SearchBar.scss';
+
+// Page speciffic styles
+
+@import './pages/DetailedPage.scss';

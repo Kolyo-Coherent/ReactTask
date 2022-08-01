@@ -21,9 +21,7 @@ module.exports = {
             options: {
               sourceMap: true,
               localsConvention: 'camelCase',
-              modules: {
-                localIdentName: '[local]___[hash:base64:5]'
-              }
+              modules: false
             }
           },
           'sass-loader'
@@ -33,6 +31,7 @@ module.exports = {
   },
   devServer: {
     contentBase: commonPaths.outputPath,
+    historyApiFallback: true,
     compress: true,
     hot: true,
     port: 9020
